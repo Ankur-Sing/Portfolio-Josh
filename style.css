@@ -1,0 +1,512 @@
+.container {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #header {
+    width: 1440px;
+    height: 152px;
+    /* border: 7px solid black; */
+    display: flex;
+    align-items: center; /* Vertically centers the content */
+    justify-content: space-between; /* Adds spacing between image and nav */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+  .nav {
+    display: flex;
+    width: 604px;
+    height: 37px;
+    margin-right: 100px;
+  }
+  .nav > div {
+    margin: auto;
+    
+    /* border: 2px solid black; */
+  }
+  .nav>div>a:hover{
+    background-color: #FFB400;
+    
+    padding: 5px;
+    transform: translateY(-5px);
+    border-radius: 5px;
+    
+  }
+  .nav > div > a {
+    text-decoration: none;
+    color: black;
+  }
+  img {
+    width: 158px;
+    height: 76px;
+    margin-left: 40px;
+  }
+  .role {
+    
+    width: 1439px;
+    height: 450px;
+    /* border: 3px solid black; */
+    display: grid;
+    grid-template-columns: 450px 750px;
+    grid-template-rows: 400px ;
+    gap: 5px;
+    /* margin-top: 150px; */
+  }
+  
+  h1{
+    color: black;
+  }
+  
+  .role>div{
+    /* border: 1px solid black; */
+  }
+  #details{
+    display: grid;
+    grid-template-columns:450px ;
+    grid-template-rows:130px 130px 50px ;
+    gap: 5px;
+  }
+  #details>div{
+    /* border: 1px solid black; */
+    margin-left: 50px;
+  }
+  #hire{
+    width: 90px;
+    margin-top: 15px;
+  }
+  #hire>button{
+    background-color:rgb(194, 190, 53);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+ #ladki>img{
+    margin-top: 50px;
+    margin-left: 100px;
+    height: 320px;
+    width: 450px;
+    border-radius: 5px;
+ }
+ .projects{
+    width: 1000px;
+    height:842px;
+    /* border: 2px solid black; */
+    margin: auto;
+    display: grid;
+    /* scroll-margin-top: 160px; */
+    grid-template-columns:  repeat(3,1fr);
+    grid-template-rows: 100px  repeat(2,1fr);
+    gap: 20px;
+    
+ }
+ .projects>div{
+  
+ }
+ 
+html {
+scroll-behavior: smooth;
+}
+#header {
+position: fixed; /* Fixes the header to the top */
+top: 0; /* Positions it at the top */
+
+width: 100%; /* Ensures the header spans the full width */
+height: 130px;
+/* border: 1px solid black; */
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: white; /* Optional: Add background color to prevent transparency */
+z-index: 1000; /* Keeps the header on top of other elements */
+
+}
+.role {
+padding-top: 150px; /* Adjust this value to the height of your header */
+}
+.projects > div:first-child {
+grid-column: 1 / span 3; /* Spans from column 1 to 3 */
+margin-top: 2px;
+}
+.projects {
+scroll-margin-top: 150px; /* Add margin to prevent hiding under the header */
+}
+.projects>div>img{
+height: 210px;
+width: 100%;
+margin: auto;
+border-radius: 5px;
+}
+.pr1>div{
+display: flex;
+gap: 5px;
+}
+.pr1>div>div{
+border: 1px solid black;
+height: 20px;
+width: 23%;
+border-radius: 10px;
+text-align: center;
+padding: 5px;
+background-color: aliceblue;
+} 
+.pr1>h4,p{
+margin-left: 5px;
+}
+.recommendations-section {
+width: 100%;
+padding: 50px 0;
+background-color: #f9f9f9;
+overflow-x: hidden; /* Prevents horizontal overflow beyond the container */
+
+}
+
+.recommendations-scroll-container {
+display: flex;
+gap: 20px;
+overflow-x: auto; /* Enables horizontal scrolling */
+padding: 20px;
+scroll-behavior: smooth; /* Smooth scrolling when navigating */
+}
+
+.recommendation-card {
+    
+min-width: 300px; /* Minimum width to ensure the cards are large enough for scrolling */
+background-color: white;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+padding: 20px;
+text-align: center;
+flex-shrink: 0; /* Prevents shrinking of cards */
+}
+
+.rating {
+font-size: 20px;
+color: orange;
+}
+
+.person {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 10px;
+}
+
+.person-img {
+border-radius: 50%;
+width: 60px;
+height: 60px;
+margin-right: 10px;
+}
+
+.recommendation-card h4 {
+margin: 0;
+font-size: 18px;
+}
+
+.recommendation-card p {
+font-size: 14px;
+color: #777;
+}
+
+/* For hiding scrollbar on webkit browsers (optional, for a cleaner look) */
+.recommendations-scroll-container::-webkit-scrollbar {
+display: none;
+}
+
+/* Optional: Adds some padding on the right so cards don't stick to the edge */
+.recommendations-scroll-container {
+padding-right: 20px;
+}
+.skillscontainer{
+width: 1000px;
+height: 950px;
+/* border: 5px solid black; */
+margin: auto;
+
+}
+.contain{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 20px;
+
+}
+.contain>div{
+/* border: 1px solid black; */
+height: 316px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+padding: 10px;
+}
+#add{
+width: 151px;
+height: 51px;
+border-radius: 5px;
+text-align: center;
+margin: 90px 0px 200px 420px;
+padding: 17px 16px 17px 16px;
+background-color: #FFB400;
+cursor: pointer;
+}
+.front{
+display: grid;
+grid-template-columns: 290px;
+margin: auto;
+margin-top: 10px;
+
+}
+.front>div{
+/* border: 2px solid black; */
+height: 35px;
+}
+.skill-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+        border-radius: 25px;
+        overflow: hidden;
+        margin-bottom: 10px;
+        margin-top: 5px;
+
+    }
+
+    .skill-bar-inner {
+        height: 4.04px;
+        border-radius: 25px;
+        background-color: orange;
+        width: 0;
+    }
+
+    .skill-bar-inner.html { width: 90%; }
+    .skill-bar-inner.css { width: 90%; }
+    .skill-bar-inner.js { width: 85%; }
+    .skill-bar-inner.react {width: 80%;}
+    .skill-bar-inner.hindi { width: 95%; }
+    .skill-bar-inner.english { width: 90%; }
+    .skill-bar-inner.c { width: 70%; }
+    .skill-bar-inner.cpp { width: 90%; }
+    .skill-bar-inner.js { width: 85%; }
+    .skill-bar-inner.sql { width: 80%; }
+    .skill-bar-inner.vs { width: 90%; }
+    .skill-bar-inner.git { width: 70%; }
+    .skill-bar-inner.github { width: 80%; }
+    .skill-bar-inner.work { width: 80%; }
+    .skill-bar-inner.oops { width: 90%; }
+    .skill-bar-inner.network { width: 90%; }
+    .skill-bar-inner.dbms { width: 85%; }
+    .skill-bar-inner.os { width: 70%; }
+    span{
+        float: right;
+        margin-right: 10px;
+        font-size: 17px;
+    }
+    .sk{
+      font-weight: 500px;
+      size: 18px;
+      line-height: 22.25px;
+    }
+   #skil{
+    scroll-margin-top: 150px;
+   }
+   .addskillform {
+    position: fixed; /* Fixed positioning for the modal */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Background overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure the modal is on top */
+    
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px; /* Width of the modal */
+}
+   
+
+    
+   .contact{
+width: 1440px;
+height: 759.67px;
+top: 2536.33px;
+padding: 0px 98px 0px 98px;
+gap: 0px;
+background-color: #f0f0f6;
+display: flex;
+flex-direction:row;
+scroll-margin-top: 150px;
+}
+.contact .formm{
+/*	background-color: yellow;*/
+width: 700px;
+height: 759px;
+top: 0.67px;
+left: 98px;
+gap: 45px;	
+margin-left: -21px;
+}
+.contact .contactinfo{
+width: 373px;
+height: 759.67px;
+left: 969px;
+gap: 0px;
+opacity: 0px;
+background-color: #f0f0f6;
+}
+.formm .inside{
+width: 845.38p;
+height: 600px;
+padding: 25px 36px 25px 36px;
+gap: 22px;
+background-color: white;
+}
+.inside form {
+display: flex;
+flex-direction: column;
+}
+.inside form label {
+font-family: Inter;
+font-weight: 500;
+text-align: left;
+font-size: 18px;
+color: #333;
+color: #767676;
+}
+.inside form button {
+font-size: 14px;
+width: 151px;
+height: 50.83px;
+padding: 17px 16px 17px 16px;
+gap: 10px;
+background-color: #FFB400;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin-top: 70px;
+color: black;
+cursor: pointer;
+}
+.inside form input[type="text"],
+.inside form input[type="email"],
+.inside form textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 12px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 18px;
+color: #767676;
+background-color: #f0f0f6;
+}
+
+.continfo{
+width: 373px;
+height: 752px;
+/* border: 2px solid black; */
+}
+.details{
+display: grid;
+gap: 10px;
+}
+.details>div{
+width: 90%;
+height: 211px;
+/* border: 2px solid black; */
+margin: auto;
+padding: 0;
+background-color: white;
+
+}
+.country{
+display: flex;
+
+}
+.left{
+margin-top: 70px;
+margin-left: 10px;
+}
+.right{
+margin-left: 70px;
+margin-top: 70px;
+}
+.footerimg{
+width: 970px;
+height: 144px;
+/* border: 2px solid black; */
+display: flex;
+margin-left: 240px;
+
+}
+.f{
+height: 144px;
+width: 140px;
+left: 300px;
+}
+
+.footer{
+width: 1210px;
+height: 401px;
+/* border: 2px solid black; */
+}
+.footerlinks{
+display: flex;
+
+}
+.footerlinks>div{
+width: 177px;
+height: 230px;
+/* border: 1px solid black; */
+margin: auto;
+margin-top: 50px;
+}
+.linkimg{
+height: 40px;
+width: 91px;
+border: 4px;
+margin-left: 6px;
+}
+.lorem{
+margin-top: 1px;
+font-size: 12px;
+font-weight: 400;
+}
+.lastlink{
+text-decoration: none;
+color: black;
+}
+.linkedin{
+width: 100px;
+height: 25px;
+margin-left: 8px;
+}
+#sp{
+color: chocolate;
+float: left;
+font-size: 33px;
+}
+#diagram{
+width: 22.83px;
+height: 21.58px;
+border: 2px;
+top: 721.29px;
+left: 128.89px;
+}
+#diagramtop{
+width: 22.83px;
+height: 21.58px;
+border: 2px;
+top: 192.29px;
+margin-left: 1px;
+}
+
+.imgcont{
+position: relative;
+height: 100px;
+width: 100px;
+margin-top: 10px;
+/* border: 2px solid black; */
+}
+
